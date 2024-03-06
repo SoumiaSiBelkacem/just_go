@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificateur de voyage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Planificateur de voyage</h1>
+        <label for="budget">Budget:</label>
+        <input type="range" class="form-control" id="budget" min="0" max="1000" value="500" oninput="updateBudgetValue()">
+        <span id="budgetValue">500</span> €
+        <label for="duree">Durée du séjour (en jours):</label>
+        <input type="range" class="form-control" id="duree" min="1" max="14" value="7" oninput="updateDureeValue()">
+        <span id="dureeValue">7</span> jours
+        <button onclick="calculerDestination()" class="btn btn-primary">Trouver la meilleure destination</button>
+        <p id="destination" class="mt-3"></p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function updateBudgetValue() {
+            var budget = document.getElementById('budget').value;
+            document.getElementById('budgetValue').innerText = budget;
+        }
+
+        function updateDureeValue() {
+            var duree = document.getElementById('duree').value;
+            document.getElementById('dureeValue').innerText = duree;
+        }
+
+        function calculerDestination() {
+            var budget = parseInt(document.getElementById('budget').value);
+            var duree = parseInt(document.getElementById('duree').value);
+            var aux = budget / duree;
+            var destination = '';
+
+            if (aux >= 350) {
+                destination = "Paris";
+            } else if (aux >= 150) {
+                destination = "Lille";
+            } else if (aux >= 60) {
+                destination = "Brest";
+            } else {
+                destination = "Aucune destination disponible dans votre budget.";
+            }
+
+            document.getElementById('destination').innerHTML = "Meilleure destination: " + destination;
+        }
+    </script>
+</body>
+</html>
