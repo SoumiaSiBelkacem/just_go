@@ -37,7 +37,6 @@
 <body>
     
 
-
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
@@ -57,7 +56,7 @@
 
                     <a href="../contact.html" class="nav-item nav-link ">Contact</a>
                 </div>
-                <a href="../annexes/user_sign.html" class="btn btn-primary rounded-pill py-2 px-4"
+                <a href="user_sign.html" class="btn btn-primary rounded-pill py-2 px-4"
                     id="registerBtn">Connexion</a>
 
             </div>
@@ -83,102 +82,134 @@
     <!-- Navbar & Hero End -->
 
     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h6 class="section-title bg-white text-center text-primary px-3">Planification</h6>
-        <h1 class="mb-5">Planifiez votre voyage</h1>
+        <h6 class="section-title bg-white text-center text-primary px-3">Profil</h6>
+        <h1 class="mb-5">Touriste</h1>
     </div>
 
-    <!-- Planning Start -->
-   
-      
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="booking p-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-6 text-white">
-                        <h6 class="text-white text-uppercase">Planning</h6>
-                        <h1 class="text-white mb-4">En une touche</h1>
-                        <p class="mb-4">Nous vous facilitons la planification de votre voyage</p>
-                        <p class="mb-4">Dites nous tous</p>
-                        <a class="btn btn-outline-light py-3 px-5 mt-2" href="">Reservez</a>
-                    </div>
-                 
+    <!-- User Info Section Start -->
+    <div class="container mt-5">
+        <div class="text-center">
+            <img src="../img/charafnew.jpg" class="rounded-circle img-thumbnail" alt="Photo de Profil" width="400">
+        </div>
+        <h2 class="text-center p-4">Charaf-eddine</h2>
+        <div class="table-responsive mt-4">
+            <table class="table table-bordered">
+                <tbody>
+
+                    <tr>
+                        <th scope="row">Date de Naissance</th>
+                        <td>01/01/1990</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Couleur Préférée</th>
+                        <td>Vert</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Préférences Alimentaires</th>
+                        <td>Plats italiens, sushi</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Centres d'Intérêt</th>
+                        <td>Voyage, Cuisine, Musique</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Loisirs</th>
+                        <td>Randonnée, Natation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-danger me-2">Modifier</button>
+            <button type="button" class="btn btn-warning">Supprimer</button>
+        </div>
+    </div>
+    <!-- User Info Section End -->
 
 
-                    <div class="tbbb">
-    <form action="https://formsubmit.co/berwork41@gmail.com" method="POST">
-        <input type="text" name="name" required placeholder="name">
-        <input type="email" name="email" required  placeholder="email">
-        <input type="text" name="subject" id=""  placeholder="subject">
-        <textarea name="msg" required placeholder="message"></textarea>
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_cc" value="berwork41@gmail.com,newgirle16@gmail.com">
-        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-        <input type="hidden" name="_template" value="table">
-        <button type="submit">Send</button>
-   </form>
+    <!-- History Section Start -->
+<div class="container mt-5">
+    <h2>Historique</h2>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Lieu Visitée</th>
+                    <th>Durée</th>
+                    <th>Lieu de Résidence</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paris</td>
+                    <td>5 jours</td>
+                    <td>Hôtel ABC</td>
+                    <td>01/05/2023 - 05/05/2023</td>
+                </tr>
+                <tr>
+                    <td>Rome</td>
+                    <td>7 jours</td>
+                    <td>Airbnb Colisée</td>
+                    <td>15/06/2023 - 22/06/2023</td>
+                </tr>
+                <tr>
+                    <td>Tokyo</td>
+                    <td>10 jours</td>
+                    <td>Hôtel Shinjuku</td>
+                    <td>10/08/2023 - 20/08/2023</td>
+                </tr>
+                <!-- Ajoutez plus de lignes ici pour chaque élément d'historique -->
+            </tbody>
+        </table>
+    </div>
 </div>
-<style>
-        .tbbb {
-                           /* Couleur de l'arrière-plan */
-                            background-image: url('booking.jpg');
-                            background-size: cover; /* Ajuster la taille de l'image pour couvrir tout l'élément */
-                            background-repeat: no-repeat; /* Empêcher la répétition de l'image */
-                            background-position: center; /* Centrer l'image */
-                        }
-                        
-                        /* Style supplémentaire pour le formulaire si nécessaire */
-                        .tbbb form {
-                         /* Couleur de fond du formulaire */
-                            color: white; /* Couleur du texte */
-                            padding: 20px; /* Espacement autour du formulaire */
-                        }
-                        
-                        /* Style pour les inputs */
-                        .tbbb form input[type="text"],
-                        .tbbb form input[type="email"],
-                        .tbbb form textarea {
-                           
-                            /* Couleur de fond des champs de texte */
-                            color: green; /* Couleur du texte */
-                            border: 1px solid green; /* Bordure */
-                            padding: 10px; /* Espacement à l'intérieur du champ */
-                            margin-bottom: 10px; /* Espacement entre les champs */
-                        }
-                        
-                        /* Style pour le bouton */
-                        .tbbb form button[type="submit"] {
-                            /* Couleur de fond du bouton */
-                            color: green; /* Couleur du texte */
-                            border: 1px solid green; /* Bordure */
-                            padding: 10px 20px; /* Espacement à l'intérieur du bouton */
-                            cursor: pointer; /* Curseur au survol */
-                        }
-
-</style>
+<!-- History Section End -->
 
 
 
+    <!-- Modals -->
+
+    <!-- Modal de Modification de Profil -->
+    <div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editProfileModalLabel">Modifier le Profil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Formulaire de modification du profil -->
+                    <!-- Ajoutez les champs de formulaire pour chaque détail du profil ici -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary">Enregistrer les Modifications</button>
                 </div>
             </div>
         </div>
-        
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-</div>
-    <!-- Planning End -->
-
-
+    <!-- Modal de Suppression de Profil -->
+    <div class="modal fade" id="deleteProfileModal" tabindex="-1" aria-labelledby="deleteProfileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteProfileModalLabel">Supprimer le Profil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Êtes-vous sûr de vouloir supprimer votre profil? Cette action est irréversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-danger">Supprimer le Profil</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
